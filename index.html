@@ -235,5 +235,18 @@
     function goToSlide(index) { showSlide(index); }
     setInterval(() => showSlide(currentSlide + 1), 4000);
   </script>
+<script>
+document.querySelectorAll(".card").forEach(card => {
+  card.style.cursor = "pointer";
+  card.onclick = () => {
+    const section = card.closest("section");
+    if(section </body></body> section.id === "news") {
+      window.location.href = "/nova-light/news.html";
+    } else {
+      window.location.href = "/nova-light/knowledge.html";
+    }
+  });
+});
+</script>
 </body>
 </html>
