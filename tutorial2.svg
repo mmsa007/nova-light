@@ -1,0 +1,7 @@
+<svg width="400" height="220" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f857a6"/><stop offset="100%" stop-color="#ff5858"/></linearGradient></defs>
+  <rect width="400" height="220" fill="url(#g)"/>
+  <text x="200" y="100" font-size="45">🎨</text>
+  <text x="200" y="140" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle">图像生成</text>
+  <text x="200" y="165" font-family="Arial" font-size="12" fill="white" text-anchor="middle" opacity="0.8">Midjourney</text>
+</svg>
