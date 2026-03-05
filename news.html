@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>最新资讯 | Nova Light</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg-primary: #fdf8f0; --bg-card: #ffffff; --text-primary: #2d2d2d; --text-secondary: #5a5a5a; --text-muted: #8a8a8a; --accent: #e07a5f; --accent-light: rgba(224, 122, 95, 0.1); --border: #3d3d3d; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Noto Serif SC', serif; background: var(--bg-primary); color: var(--text-primary); line-height: 1.7; min-height: 100vh; background-image: radial-gradient(circle at 20% 30%, rgba(224, 122, 95, 0.05) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(129, 178, 154, 0.05) 0%, transparent 40%); }
+    body::before { content: ''; position: fixed; top: 16px; left: 16px; right: 16px; bottom: 16px; border: 2px solid var(--border); border-radius: 6px; pointer-events: none; z-index: 1000; }
+    a { color: var(--accent); text-decoration: none; }
+    .header { position: sticky; top: 20px; background: rgba(253, 248, 240, 0.9); backdrop-filter: blur(8px); border: 2px solid var(--border); border-radius: 16px; z-index: 100; padding: 0 16px; margin: 0 20px; box-shadow: 3px 3px 0 var(--border); }
+    .header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .logo { display: flex; align-items: center; gap: 8px; font-family: 'ZCOOL KuaiLe', cursive; font-size: 22px; }
+    .logo-icon { width: 36px; height: 36px; background: var(--bg-card); border: 2px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 2px 2px 0 var(--border); }
+    .nav { display: flex; gap: 4px; }
+    .nav a { padding: 6px 14px; color: var(--text-secondary); font-size: 13px; font-weight: 600; border: 2px solid transparent; border-radius: 8px; }
+    .nav a:hover, .nav a.active { color: var(--text-primary); border-color: var(--border); background: var(--bg-card); }
+    .main { max-width: 1000px; margin: 0 auto; padding: 40px 24px; }
+    .page-header { text-align: center; margin-bottom: 40px; }
+    .page-header h1 { font-family: 'ZCOOL KuaiLe', cursive; font-size: 42px; margin-bottom: 12px; }
+    .back-link { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: var(--bg-card); border: 2px solid var(--border); border-radius: 10px; margin-bottom: 24px; font-weight: 600; }
+    .news-list { display: flex; flex-direction: column; gap: 20px; }
+    .news-item { background: var(--bg-card); border: 2px solid var(--border); border-radius: 16px; padding: 24px; display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: start; box-shadow: 3px 3px 0 rgba(61,61,61,0.15); }
+    .news-image { width: 120px; height: 80px; border: 2px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .news-image img { width: 100%; height: 100%; object-fit: cover; }
+    .news-content h3 { font-family: 'ZCOOL KuaiLe', cursive; font-size: 20px; margin-bottom: 8px; }
+    .news-content p { color: var(--text-secondary); font-size: 14px; margin-bottom: 12px; }
+    .news-meta { display: flex; gap: 16px; font-size: 12px; color: var(--text-muted); }
+    .tag { display: inline-block; padding: 4px 12px; background: var(--accent-light); color: var(--accent); font-size: 11px; font-weight: 700; border: 1px solid var(--border); border-radius: 12px; }
+    .footer { border-top: 2px dashed var(--border); padding: 24px; text-align: center; color: var(--text-muted); font-size: 13px; background: var(--bg-card); }
+    @media (max-width: 768px) { body::before { display: none; } .header { margin: 0 10px; top: 10px; } .header-inner { justify-content: center; height: auto; padding: 12px 0; flex-wrap: wrap; gap: 12px; } .nav { width: 100%; justify-content: center; } .news-item { grid-template-columns: 1fr; } .news-image { width: 100%; height: 160px; } }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><div class="logo-icon">✨</div>Nova Light</a>
+      <nav class="nav">
+        <a href="index.html">首页</a>
+        <a href="openclaw.html">OpenClaw</a>
+        <a href="knowledge.html">知识库</a>
+        <a href="news.html" class="active">资讯</a>
+        <a href="about.html">关于</a>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <a href="index.html" class="back-link">← 返回首页</a>
+    <div class="page-header"><h1>📰 最新资讯</h1></div>
+    <div class="news-list">
+      <article class="news-item">
+        <div class="news-image"><img src="images/news1.png" alt="GPT-5"></div>
+        <div class="news-content"><span class="tag">重磅</span><h3>GPT-5 正式发布！</h3><p>OpenAI 发布 GPT-5，推理能力质的飞跃，多模态能力大幅提升。</p><div class="news-meta"><span>🗓️ 2026-03-05</span><span>📂 行业动态</span></div></div>
+      </article>
+      <article class="news-item">
+        <div class="news-image"><img src="images/news2.png" alt="Claude"></div>
+        <div class="news-content"><span class="tag">编程</span><h3>Claude 4 强势来袭</h3><p>Anthropic 发布 Claude 4，编程能力大幅提升。</p><div class="news-meta"><span>🗓️ 2026-03-04</span><span>📂 行业动态</span></div></div>
+      </article>
+      <article class="news-item">
+        <div class="news-image"><img src="images/news3.png" alt="Gemini"></div>
+        <div class="news-content"><span class="tag">Google</span><h3>Gemini 2.5 Ultra 发布</h3><p>长上下文理解再升级，支持 200 万 token。</p><div class="news-meta"><span>🗓️ 2026-03-03</span><span>📂 产品</span></div></div>
+      </article>
+    </div>
+  </main>
+  <footer class="footer"><p>© 2026 Nova Light.</p></footer>
+</body>
+</html>
