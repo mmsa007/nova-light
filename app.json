@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "MindLuck",
+    "slug": "mindluck",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./images/hero-ai.png",
+    "splash": {
+      "image": "./images/hero-ai.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2f0d5f"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./images/hero-ai.png",
+        "backgroundColor": "#2f0d5f"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
